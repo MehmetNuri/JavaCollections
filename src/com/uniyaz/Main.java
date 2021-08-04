@@ -94,6 +94,22 @@ public class Main {
         filmler.add(4, "Akasya Durağı");
 
         filmler.forEach(film -> System.out.print(film + "\n"));
+        System.out.println("\n\n--------------------------------------------------------------------\n\n");
+
+        System.out.println("** Vector **");
+        System.out.println("Sychronized bir collection’dır ve varsayılan kapasitesi 10’dur.Varsayılan kapasite ve artış değerlerini kullanıcı belirleyebilir.\n");
+
+        Vector<Integer> v = new Vector<Integer>();
+        for (int i = 1; i <= 5; i++)
+            v.add(i);
+        System.out.println(v);
+
+        // Index'i 3 olan elemanı sil
+        v.remove(3);
+
+        System.out.println(v);
+        for (Integer integer : v) System.out.print(integer + "\n");
+        System.out.println("\n\n--------------------------------------------------------------------\n\n");
 
 
     }
