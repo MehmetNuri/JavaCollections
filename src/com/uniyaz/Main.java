@@ -111,6 +111,27 @@ public class Main {
         for (Integer integer : v) System.out.print(integer + "\n");
         System.out.println("\n\n--------------------------------------------------------------------\n\n");
 
+        System.out.println("** Queue **");
+        System.out.println("Queue interface’i FIFO (first in first out) prensibini uygular. Yani sıraya ilk giren kişi ilk çıkar. Günlük hayattaki market sırası gibidir. .\n");
+
+        Queue<String> pq = new PriorityQueue<>();
+
+        pq.add("Erzincan");
+        pq.add("Malatya");
+        pq.add("Muğla");
+
+        System.out.println("Kuyruğun ilk hali " + pq);
+
+        pq.remove("Muğla");
+
+        System.out.println("Silme işleminden sonraki hali " + pq);
+
+        System.out.println("Seçme Metodu " + pq.poll());
+
+        System.out.println("Son Kuyruk " + pq);
+        System.out.println("\n\n--------------------------------------------------------------------\n\n");
+
+
 
     }
 }
