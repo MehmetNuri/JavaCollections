@@ -131,6 +131,19 @@ public class Main {
         System.out.println("Son Kuyruk " + pq);
         System.out.println("\n\n--------------------------------------------------------------------\n\n");
 
+        System.out.println("** HashMap **");
+        System.out.println("HashMap’ler sıralamayı garanti etmez. null key ve null value kabul eder..\n");
+
+
+        HashMap<String, String> sozluk = new HashMap<String, String>();
+        sozluk.put("pencil", "kalem");
+        sozluk.put("computer", "bilgisayar");
+        sozluk.put("bottle", "şişe");
+        sozluk.put("shoe", "ayakkabı");
+
+        sozluk.forEach((kelimeEN, kelimeTR) -> System.out.println(kelimeEN + "-" +kelimeTR ));
+        System.out.println("\n\n--------------------------------------------------------------------\n\n");
+
 
 
     }
